@@ -1,0 +1,12 @@
+.basicInfo {
+    display: grid;
+    grid-template-areas:
+    "charName charDetails";
+}
+
+.charDetails {
+    grid-area: "charDetails";
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}

@@ -1,22 +1,11 @@
-import "./style.css"
-import { useState } from "react"
+import "./style.css";
+import { useState } from "react";
+import BasicInfo from "../../components/basicInfo";
+import StatList from "../../components/statList";
 
 const Dashboard = () => {
     const [char, setChar] = useState({
-        name : "",
-        charClass : "",
-        background : "",
-        playerName : "",
-        race : "",
-        alignment : "",
-        stats : {
-            str : "",
-            dex : "",
-            con : "",
-            int : "",
-            wis : "",
-            cha : "",
-        },
+               
         saveThrows : {
             str : "",
             dex : "",
@@ -45,7 +34,18 @@ const Dashboard = () => {
             stealth : "",
             surv : "",
         }
-    
-
     })
+
+    return (
+        <>
+            {/* <header></header> */}
+            <main>
+                <BasicInfo />
+                <StatList />
+
+            </main>
+        </>
+    )
 }
+
+export default Dashboard
